@@ -7,6 +7,7 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
       return `
         <h2>${item.title}</h2>
         <p>${item.body}</p>
+        <hr />
       `
     }).join("")
     document.getElementById("show-posts").innerHTML = postHTML
