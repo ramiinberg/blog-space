@@ -12,3 +12,16 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     }).join("")
     document.getElementById("show-posts").innerHTML = postHTML
   })
+
+document.getElementById("new-post").addEventListener("submit", event => {
+  event.preventDefault()
+
+  const title = document.getElementById("post-title").value
+  const body = document.getElementById("post-body").value
+
+  const data = {
+    title: title,
+    body: body
+  }
+
+})
