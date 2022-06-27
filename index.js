@@ -32,6 +32,14 @@ document.getElementById("new-post").addEventListener("submit", event => {
     }
   })
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+      const postHTML = `
+        <h2>${data.title}</h2>
+        <p>${data.body}</p>
+        <hr />
+      `
+      document.getElementById("show-posts").innerHTML = postHTML + document.getElementById("show-posts").innerHTML
+      console.log(data)
+    })
 
 })
