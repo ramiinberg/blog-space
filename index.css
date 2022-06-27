@@ -18,6 +18,12 @@ nav > h3 {
   margin: 0;
 }
 
-#show-posts {
-  padding: 3em 1em 1em;
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 4em 1em 1em;
 }
+
+/* #show-posts {
+  padding: 3em 1em 1em;
+} */
