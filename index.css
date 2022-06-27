@@ -24,6 +24,6 @@ form {
   padding: 4em 1em 1em;
 }
 
-/* #show-posts {
-  padding: 3em 1em 1em;
-} */
+#show-posts {
+  padding: 1em;
+}
