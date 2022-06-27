@@ -19,11 +19,27 @@ nav > h3 {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   padding: 4em 1em 1em;
+  background-color: lightcoral;
+}
+
+#post-title, #post-body {
+  margin-bottom: 1em;
 }
 
 #show-posts {
   padding: 1em;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  margin-top: 1em;
+  background-color: darkred;
+  color: white;
+  padding: 0.5em, 1em;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
