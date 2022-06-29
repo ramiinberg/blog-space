@@ -11,6 +11,7 @@ function renderPosts() {
   document.getElementById("show-posts").innerHTML = postHTML
 }
 
+//Default fetch when page is loading
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
   .then(response => response.json())
   .then(data => {
@@ -18,6 +19,7 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     renderPosts()
   })
 
+// FORM SUBMIT
 document.getElementById("new-post").addEventListener("submit", event => {
   event.preventDefault()
 
@@ -44,6 +46,7 @@ document.getElementById("new-post").addEventListener("submit", event => {
       }
       postsArray.unshift(newData)
       renderPosts()
+      //Resetting text inputs
       document.getElementById("post-title").value = ""
       document.getElementById("post-body").value = ""
     })
