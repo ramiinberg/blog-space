@@ -22,8 +22,8 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
   })
 
 // FORM SUBMIT
-document.getElementById("new-post").addEventListener("submit", event => {
-  event.preventDefault()
+document.getElementById("new-post").addEventListener("submit", e => {
+  e.preventDefault()
 
   const title = titleInput.value
   const body = bodyInput.value
